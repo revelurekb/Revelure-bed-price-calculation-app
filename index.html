@@ -1016,11 +1016,20 @@
         };
     </script>
 	
-	<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js');
-}
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register(
+        '/Revelure-bed-price-calculation-app/service-worker.js'
+      ).then(function (registration) {
+        console.log('ServiceWorker registered:', registration.scope);
+      }).catch(function (error) {
+        console.log('ServiceWorker registration failed:', error);
+      });
+    });
+  }
 </script>
+
 	
 </body>
 </html>
