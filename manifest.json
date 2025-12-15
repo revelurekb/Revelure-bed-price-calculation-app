@@ -1,7 +1,7 @@
 {
   "name": "Bed Pricing Calculator",
   "short_name": "BedCalc",
-  "start_url": "./index.html",
+  "start_url": "/Revelure-bed-price-calculation-app/",
   "display": "standalone",
   "background_color": "#0A051E",
   "theme_color": "#0A051E",
@@ -19,3 +19,4 @@
     }
   ]
 }
+
