@@ -1020,12 +1020,9 @@
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
       navigator.serviceWorker.register(
-        '/Revelure-bed-price-calculation-app/service-worker.js'
-      ).then(function (registration) {
-        console.log('ServiceWorker registered:', registration.scope);
-      }).catch(function (error) {
-        console.log('ServiceWorker registration failed:', error);
-      });
+        '/Revelure-bed-price-calculation-app/service-worker.js',
+        { scope: '/Revelure-bed-price-calculation-app/' }
+      );
     });
   }
 </script>
